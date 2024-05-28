@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+    <div class="block">
+        <h4>hey there, my name is <span id ="username">sumit prasad</span>:)</h4>
+        <p class="paragraph">here is the code for u</p>
+        <pre><code>console.log('hey there')</code></pre>
+        <!-- pre tag is used so the it give the output as coded by the programmer  -->
+    </div>
+
+    <script>
+        //query selector
+        /*
+        selector 
+        -  tag name 
+        - id #
+        - class .class_name 
+        */ 
+       const body = document.querySelector("body");
+       /* query selector is used to select the selector 
+       on which the task is to be performed. 
+       like the body we can select other tags to like div, p, span etc.
+       it only selects the first tag which is found in the process and 
+       leaves the other untouched*/
+
+    //    body.innerHTML ="<h1>hacked!!</h1>";
+       /* above line over rides the whole body tag itself replacing
+        all the other objects given in the body tag. */
+
+    //    console.log(body.innerHTML);
+       /*prints the whole original code in console. */
+
+       const username =document.querySelector("#username");
+       username.innerText ="sumit"
+       /*changes the text inside the HTML even if we put tag to change the 
+       presentation it would not change the format and remain in text only.
+       body.innerTEXT ="<h1>hacked!!</h1>", output would be <h1>hacked!!</h1>.*/
+
+    //    const ele = document.querySelector(".paragraph");
+    //    console.log(ele.innerHTML)
+
+    //    const ele =document.querySelector("div");
+    //    console.log(ele.children);
+       /*children is a property which returns the children of the parent tag.
+       in this case it returns the children of the div with the length of the 
+       tag given too.*/
+
+    //    const ele = document.querySelector(".paragraph");
+    //    console.log(ele.parentElement);
+       /* gets the parent class of the tag. */
+
+    //    const ele = document.querySelector("div");
+    //    console.log(ele.parentElement.children);
+       /* gives the siblings of the tag given as output 
+       as per the parent it is situated to.*/
+
+       const ele = document.querySelectorAll(".block");
+       ele.forEach((e)=>{
+        console.log(e.innerHTML);
+       });
+       /* by the above code writen it will represent all the 
+       tag which useds class name 'block' and represent all the element 
+       or sentences which are coded in that tag */
+    </script>
+</body>
+</html>

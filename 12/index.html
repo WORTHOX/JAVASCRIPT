@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DOM</h3>
+    <script>
+        alert("hey there I'm alert!!") 
+        //give alert for the situation that come accross
+
+        prompt("What is your name?") 
+        // give and input giving alert box
+
+        const value = prompt("What is your name ?", "sdefault")//after coma we give default value to the input in the prompt
+        console.log(value);
+        /* console.log is basically window.console.log as the server 
+        itself is the window even it is the same thing for alert too.
+        whatever interaction is done with the server/browser we use 
+        window object to interact. */
+
+        console.log(document);
+        //give the whole code in consle while we inspect it 
+        document.title="abcd";
+        //it will change the doc. title even if we have written anything on the HTML head title.
+        /* javascript can change or override the DOM sys.*/
+
+        const name = prompt("What Is Your Name?");
+        document.write("HELLO"+ name );
+        //it adds hello in front of the user input prompt and gives the result on the main screen
+    </script>
+</body>
+</html>

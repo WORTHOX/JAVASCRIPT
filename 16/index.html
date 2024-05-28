@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color{
+            color: red;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+    <div class="block">
+        <h4>hey there, my name is <span onclick="alert('hey')" id ="username">sumit prasad</span>:)</h4>
+        <p class="paragraph">here is the code for u</p>
+        <pre><code>console.log('hey there')</code></pre>
+        <!-- pre tag is used so the it give the output as coded by the programmer  -->
+    </div>
+    <!-- <button onclick="handleButtonClick()/*console.log('hey i am clicked')*/">click me</button> -->
+    <button id="clickButton">Click me</button>
+    <script>
+        // function handleButtonClick(){
+        //     console.log("the button is clicked");
+        //     alert("hey i'm clicked");
+        // } 
+        const el = document.getElementById("clickButton");
+        el.onclick=() =>{
+            console.lod("hey i am clicked");
+        };
+        /* this can get affected if someone writes the code below the onclick. */
+    </script>
+</body>
+</html>

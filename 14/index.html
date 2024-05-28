@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red-color{
+            color: red;
+        }
+        .underline{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragraph">Welcome to my website</p>
+    </nav>
+    <div class="block">
+        <h4>hey there, my name is <span id ="username">sumit prasad</span>:)</h4>
+        <p class="paragraph">here is the code for u</p>
+        <pre><code>console.log('hey there')</code></pre>
+        <!-- pre tag is used so the it give the output as coded by the programmer  -->
+    </div>
+    <script>
+        const el = document.getElementById("username");
+        el.setAttribute('aria', "123");
+        /*this adds the attributes like src, href and etc. for HTML.*/
+
+        // el.remove();
+        /* removes the tag itself which was being called and that id will be  
+        removed totally from the code*/
+        el.innerText = "Sumit Prasad"
+        console.log(el.innerText);
+
+        // el.style.textDecoration = "underline"
+        /* this add only one kind of styling at the moment.*/
+
+        el.classList.add("red-color", "underline");
+        /* it allows the classes to be added as per required. 
+        by this method we can add several styles at a single iteration itself.*/
+
+        // el.classList.remove("red-color");
+         /* it allows the classes to remove its property as per required */
+
+         el.parentElement.style.background ="grey";
+    </script>
+</body>
+</html>
+
